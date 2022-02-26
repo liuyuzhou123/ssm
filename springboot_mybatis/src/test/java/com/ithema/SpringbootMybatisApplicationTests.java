@@ -1,0 +1,20 @@
+package com.ithema;
+
+import com.ithema.dao.bookDao;
+import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
+
+@SpringBootTest
+class SpringbootMybatisApplicationTests {
+
+    @Autowired
+
+    private bookDao bookDao;
+
+    @Test
+    void contextLoads() {
+        System.out.println(bookDao.getById(1));
+    }
+
+}
